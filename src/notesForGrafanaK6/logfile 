@@ -1,0 +1,18 @@
+
+2. **Terminalden Yönlendirme ile Logları Dosyaya Yazma:**
+   - Terminali aç ve `log.js` dosyasının bulunduğu dizine git:
+     ```sh
+     cd /Users/skup/Downloads/GrafanaK6/src
+     ```
+   - K6 scriptini çalıştır ve çıktıyı bir dosyaya yönlendir:
+     ```sh
+     k6 run log.js > /Users/skup/Desktop/logfile.log
+     ```
+
+3. **Özet Dosyasını Kontrol Etme:**
+   - Test tamamlandığında, `summary.json` dosyasında sonuçları bulacaksın:
+     ```sh
+     cat summary.json
+     ```
+     when those files are different package
+k6 run /Users/skup/Downloads/GrafanaK6/src/grafanaTestTypes/clickjacking.js > /Users/skup/Desktop/logfile.log

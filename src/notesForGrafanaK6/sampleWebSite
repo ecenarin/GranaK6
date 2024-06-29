@@ -1,0 +1,17 @@
+Örnek Test Siteleri:
+OWASP Juice Shop:
+
+OWASP Juice Shop, kasıtlı olarak güvenlik açıkları içeren bir web uygulamasıdır. Burada güvenlik testlerini güvenle yapabilirsin.
+URL: https://juice-shop.herokuapp.com
+Damn Vulnerable Web Application (DVWA):
+
+DVWA, çeşitli güvenlik açıklarına sahip bir web uygulamasıdır.
+URL: http://www.dvwa.co.uk
+Hack The Box:
+
+Hack The Box, birçok farklı güvenlik zafiyeti içeren makineler ve web uygulamaları sunar. Kayıt olup güvenlik testlerini burada yapabilirsin.
+URL: https://www.hackthebox.eu
+WebGoat:
+
+WebGoat, OWASP tarafından geliştirilen ve güvenlik açıkları içeren bir eğitim platformudur.
+URL: https://github.com/WebGoat/WebGoat

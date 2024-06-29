@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coin Flip Game</title>
+</head>
+<body>
+<h1>Coin Flip Game</h1>
+<button onclick="flipCoin()">Flip Coin</button>
+<h2 id="result"></h2>
+
+<script>
+    function flipCoin() {
+        const result = Math.random() < 0.5 ? "Heads" : "Tails";
+        document.getElementById("result").textContent = result;
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,94 @@
+Elbette, JavaScript'te `let`, `var` ve `const` arasındaki farkları basit bir şekilde anlatayım:
+
+### `var`, `let`, `const` Arasındaki Farklar
+
+1. **`var`**
+   - **Kapsam:** Fonksiyon kapsamına (function-scoped) sahiptir.
+   - **Yeniden Tanımlama:** Aynı isimle tekrar tanımlanabilir.
+   - **Hoisting:** Değişkenler üstte tanımlanmış gibi davranır (hoisted).
+
+   ```javascript
+   var name = "Alice";
+   var name = "Bob"; // Yeniden tanımlama mümkün
+   console.log(name); // Bob
+   ```
+
+2. **`let`**
+   - **Kapsam:** Blok kapsamına (block-scoped) sahiptir, `{}` arasında tanımlıdır.
+   - **Yeniden Tanımlama:** Aynı blok içinde yeniden tanımlanamaz.
+   - **Hoisting:** Hoisting var ama başlangıç değeri undefined.
+
+   ```javascript
+   let age = 25;
+   // let age = 30; // Hata verir, çünkü aynı blokta yeniden tanımlanamaz
+   age = 30; // Değişkenin değeri değiştirilebilir
+   console.log(age); // 30
+   ```
+
+3. **`const`**
+   - **Kapsam:** Blok kapsamına (block-scoped) sahiptir.
+   - **Yeniden Tanımlama:** Yeniden tanımlanamaz ve değer atandıktan sonra değiştirilemez.
+   - **Hoisting:** Hoisting var ama başlangıç değeri undefined.
+   - **Not:** Diziler ve nesneler gibi referans türlerinde, elemanlar değiştirilebilir ama referans sabittir.
+
+   ```javascript
+   const city = "Wroclaw";
+   // city = "Warsaw"; // Hata verir, çünkü değer değiştirilemez
+   console.log(city); // Wroclaw
+
+   const colors = ["red", "green"];
+   colors.push("blue"); // Mümkün, çünkü referans sabit ama içerik değişebilir
+   console.log(colors); // ["red", "green", "blue"]
+   ```
+
+### Kullanım Önerileri
+
+- **`var` Kullanımı:** Eski projelerde karşına çıkabilir, modern projelerde kullanmaktan kaçın.
+- **`let` Kullanımı:** Değişkenin değerini değiştirmek gerektiğinde kullan.
+- **`const` Kullanımı:** Değişmeyecek sabit değerler veya referanslar için kullan.
+
+### Örnek Kullanımlar
+
+```javascript
+// var örneği
+function varExample() {
+    if (true) {
+        var message = "Hello, World!";
+    }
+    console.log(message); // Çalışır, çünkü var fonksiyon kapsamına sahip
+}
+varExample();
+
+// let örneği
+function letExample() {
+    if (true) {
+        let message = "Hello, World!";
+    }
+    // console.log(message); // Hata verir, çünkü let blok kapsamına sahip
+}
+letExample();
+
+// const örneği
+function constExample() {
+    const pi = 3.14;
+    // pi = 3.1415; // Hata verir, çünkü const ile tanımlı
+    console.log(pi);
+}
+constExample();
+```
+
+### Özet
+
+- **`var`:** Eski, daha az güvenli, fonksiyon kapsamlı.
+- **`let`:** Blok kapsamlı, esnek.
+- **`const`:** Sabit değerler için, güvenli.
+
+Başka bir konuya geçmek istersen veya daha fazla soru sormak istersen buradayım!
+
+// Kullanıcıdan isim al ve selamla
+function greetUser() {
+    let name = prompt("What's your name?");
+    alert(`Hello, ${name}!`);
+}
+
+greetUser();

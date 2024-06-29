@@ -1,0 +1,14 @@
+k6 run /Users/skup/Downloads/GrafanaK6/src/script.js
+docker run -i -v /Users/skup/Downloads/GrafanaK6/src:/scripts loadimpact/k6 run /scripts/script.js
+export K6_BROWSER_PATH="/Applications/Google Chrome.app/Contents/MacOS/Google Chrome"
+K6'nın tarayıcı yolunu bildiğinden emin olmalıyız. Bu yolu terminalde belirtebilirsin:
+k6 run /Users/skup/Downloads/GrafanaK6/src/browser-test.js
+
+
+for ,log  file creating in jsom format
+fisr navigate log.js path
+cd /Users/skup/Downloads/GrafanaK6/src
+k6 run log.js > /Users/skup/Desktop/logfile.log
+
+cat summary.json
+you can find roots with absolute path

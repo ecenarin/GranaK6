@@ -18,6 +18,8 @@ export const options = {
         checks: ['rate==1.0'],
     },
 }
+//AAAAC3NzaC1lZDI1NTE5AAAAIM1gOm769aUOuZNYlI/iXXiI8Hxaok1FT2/DR6z1qisD la.crymosa321@gmail.com
+//AAAAC3NzaC1lZDI1NTE5AAAAIM1gOm769aUOuZNYlI/iXXiI8Hxaok1FT2/DR6z1qisD
 
 export default async function () {
     const page = browser.newPage()

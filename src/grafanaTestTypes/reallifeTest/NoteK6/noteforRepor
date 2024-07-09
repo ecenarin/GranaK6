@@ -1,0 +1,48 @@
+Harika, testin çalışıyor! Şimdi k6 sonuçlarını HTML formatında bir rapora dönüştürebiliriz. Bunun için k6’nın `k6-reporter` eklentisini kullanacağız.
+
+### Adımlar
+
+### 1. Adım: `k6-reporter` Paketini Yükleme
+
+Öncelikle, `k6-reporter` paketini yüklemeniz gerekiyor. Bu, k6 sonuçlarını HTML raporlarına dönüştürmenize olanak tanır.
+
+#### Kurulum:
+
+```bash
+npm install -g k6-reporter
+```
+
+### 2. Adım: Testi Çalıştırma ve Sonuçları JSON Formatında Kaydetme
+
+Testi çalıştırırken sonuçları JSON formatında kaydetmek için aşağıdaki komutu kullanın:
+
+```bash
+./k6 run --out json=test-results.json /Users/skup/xk6-project/test-script.js
+```
+
+Bu komut, test sonuçlarını `test-results.json` dosyasına kaydedecektir.
+
+### 3. Adım: JSON Sonuçlarını HTML Raporuna Dönüştürme
+
+`k6-reporter` aracını kullanarak JSON sonuçlarını HTML raporuna dönüştürün:
+
+```bash
+k6-reporter --json test-results.json --out report.html
+```
+
+Bu komut, `test-results.json` dosyasını okuyarak `report.html` dosyasını oluşturur.
+
+### 4. Adım: HTML Raporunu Görüntüleme
+
+Oluşturulan `report.html` dosyasını herhangi bir web tarayıcısında açarak test sonuçlarını görüntüleyebilirsiniz.
+
+### Özet
+
+Bu adımları izleyerek k6 performans test sonuçlarını HTML formatında bir rapora dönüştürebilir ve bu raporu kolayca paylaşabilirsiniz. İşte özet adımlar:
+
+1. `k6-reporter` paketini yükleyin.
+2. Testi çalıştırırken sonuçları JSON formatında kaydedin.
+3. JSON sonuçlarını HTML raporuna dönüştürün.
+4. HTML raporunu tarayıcıda görüntüleyin.
+
+Başka sorularınız olursa, her zaman buradayım Baboli!

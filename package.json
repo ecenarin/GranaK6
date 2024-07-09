@@ -2,15 +2,18 @@
   "name": "grafanak6",
   "version": "1.0.0",
   "main": "index.js",
+  "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "k6 run --config config.json /Users/skup/Downloads/GrafanaK6/src/grafanaTestTypes/reallifeTest/test-script.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "description": "",
   "dependencies": {
+    "axios": "^1.7.2",
     "express": "^4.19.2",
-    "jest": "^29.7.0"
+    "jest": "^29.7.0",
+    "papaparse": "^5.4.1"
   }
 }

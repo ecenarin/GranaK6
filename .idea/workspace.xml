@@ -5,12 +5,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="65194974-8b3b-4d36-a173-b9c0ccf3b137" name="Changes" comment="new">
-      <change afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/grafanaTestTypes/clean_json.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/grafanaTestTypes/json_to_html.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/grafanaTestTypes/reallifeTest/NoteK6/noteforRepor" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/grafanaTestTypes/reallifeTest/NoteK6/tokenAccess" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/grafanaTestTypes/reallifeTest/crud-all.mjs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/grafanaTestTypes/reallifeTest/crud-json.mjs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/grafanaTestTypes/reallifeTest/crud-papaparse.mjs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/grafanaTestTypes/reallifeTest/crud-test.mjs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/grafanaTestTypes/reallifeTest/crud-test2.mjs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/grafanaTestTypes/reallifeTest/mockWebSite.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/grafanaTestTypes/reallifeTest/test-script.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/grafanaTestTypes/reallifeTest/test-script2.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GrafanaK6.iml" beforeDir="false" afterPath="$PROJECT_DIR$/GrafanaK6.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/log.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/log.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,14 +34,26 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
-        <option value="JavaScript File" />
         <option value="HTML File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;ecenarin&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;git@github.com:ecenarin/GranaK6.git&quot;,
+    &quot;accountId&quot;: &quot;1e749be1-6c01-4d8d-8994-baa042495d9d&quot;
+  }
+}</component>
   <component name="PhpDebugGeneral" listening_started="true" />
   <component name="ProblemsViewState">
     <option name="selectedTabId" value="CurrentFile" />
@@ -47,40 +69,41 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;Application.Test.executor&quot;: &quot;Debug&quot;,
-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
-    &quot;Node.js.first.js.executor&quot;: &quot;Run&quot;,
-    &quot;Node.js.log.js.executor&quot;: &quot;Run&quot;,
-    &quot;Node.js.second.js.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/skup/Downloads/GrafanaK6&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;onboarding.tips.debug.path&quot;: &quot;/Users/skup/Downloads/GrafanaK6/src/Main.java&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "Application.Test.executor": "Debug",
+    "DefaultHtmlFileTemplate": "HTML File",
+    "Node.js.first.js.executor": "Run",
+    "Node.js.log.js.executor": "Run",
+    "Node.js.new.js.executor": "Run",
+    "Node.js.second.js.executor": "Run",
+    "Node.js.test-script.js.executor": "Debug",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/Users/skup/Downloads/GrafanaK6",
+    "nodejs_package_manager_path": "npm",
+    "npm.test.executor": "Debug",
+    "onboarding.tips.debug.path": "/Users/skup/Downloads/GrafanaK6/src/Main.java",
+    "project.structure.last.edited": "Problems",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/grafanaTestTypes/reallifeTest" />
+      <recent name="$PROJECT_DIR$/src/grafanaTestTypes/reallifeTest/NoteK6" />
       <recent name="$PROJECT_DIR$/src/javaScriptWork/HtmlProject" />
       <recent name="$PROJECT_DIR$/src/GranaTestTypes" />
       <recent name="$PROJECT_DIR$/src/notesForGrafanaK6" />
     </key>
   </component>
-  <component name="RunManager" selected="Node.js.log.js">
-    <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Test" />
-      <module name="GrafanaK6" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="npm.test">
     <configuration name="first.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/src/javaScriptWork/first.js" working-dir="$PROJECT_DIR$/src/javaScriptWork">
       <method v="2" />
     </configuration>
@@ -90,12 +113,26 @@
     <configuration name="second.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/src/javaScriptWork/second.js" working-dir="$PROJECT_DIR$/src/javaScriptWork">
       <method v="2" />
     </configuration>
+    <configuration name="test-script.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/src/grafanaTestTypes/reallifeTest/test-script.js" working-dir="$PROJECT_DIR$/src/grafanaTestTypes/reallifeTest">
+      <method v="2" />
+    </configuration>
+    <configuration name="test" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="test" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="npm.test" />
+        <item itemvalue="Node.js.test-script.js" />
         <item itemvalue="Node.js.log.js" />
         <item itemvalue="Node.js.second.js" />
         <item itemvalue="Node.js.first.js" />
-        <item itemvalue="Application.Test" />
       </list>
     </recent_temporary>
   </component>
@@ -122,6 +159,8 @@
       <workItem from="1719782469340" duration="55000" />
       <workItem from="1719784221443" duration="11000" />
       <workItem from="1719793198231" duration="150000" />
+      <workItem from="1719793507958" duration="3508000" />
+      <workItem from="1720485770193" duration="12797000" />
     </task>
     <task id="LOCAL-00001" summary="new">
       <option name="closed" value="true" />
@@ -131,18 +170,61 @@
       <option name="project" value="LOCAL" />
       <updated>1719691782176</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="new">
+      <option name="closed" value="true" />
+      <created>1719794432234</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1719794432234</updated>
+    </task>
+    <task id="LOCAL-00003" summary="new">
+      <option name="closed" value="true" />
+      <created>1719796920529</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1719796920529</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="User">
+          <value>
+            <list>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="*" />
+                </option>
+              </RecentGroup>
+            </list>
+          </value>
+        </entry>
+      </map>
+    </option>
     <option name="TAB_STATES">
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="user">
+                    <value>
+                      <list>
+                        <option value="*" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>

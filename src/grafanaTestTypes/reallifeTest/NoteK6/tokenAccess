@@ -1,0 +1,115 @@
+ofF6zfFaFCQdYi7zdwCball4w1C8hvoQk_6ERbq-NwYycc6qBvixriOoSc5VhZB4KwFsQfdqJkP1xGZk78ULsQ==
+
+./k6 run --out json=test-results.json /Users/skup/GrafanaK6/test-script.js
+
+
+Bu token ile CRUD (Create, Read, Update, Delete) işlemlerini test etmek için bir API istemcisi veya bir test betiği kullanabilirsiniz. Burada, `curl` komut satırı aracı ve Python'da `requests` kütüphanesini kullanarak CRUD işlemlerini nasıl gerçekleştirebileceğinizi göstereceğim.
+
+### `curl` Kullanarak CRUD İşlemleri
+
+#### 1. Create (Oluşturma)
+
+Yeni bir kaynağı oluşturmak için:
+
+```bash
+curl -X POST https://your-api-endpoint/resource \
+     -H "Authorization: Bearer ofF6zfFaFCQdYi7zdwCball4w1C8hvoQk_6ERbq-NwYycc6qBvixriOoSc5VhZB4KwFsQfdqJkP1xGZk78ULsQ==" \
+     -H "Content-Type: application/json" \
+     -d '{"key1":"value1", "key2":"value2"}'
+```
+
+#### 2. Read (Okuma)
+
+Mevcut bir kaynağı okumak için:
+
+```bash
+curl -X GET https://your-api-endpoint/resource/{id} \
+     -H "Authorization: Bearer ofF6zfFaFCQdYi7zdwCball4w1C8hvoQk_6ERbq-NwYycc6qBvixriOoSc5VhZB4KwFsQfdqJkP1xGZk78ULsQ=="
+```
+
+#### 3. Update (Güncelleme)
+
+Mevcut bir kaynağı güncellemek için:
+
+```bash
+curl -X PUT https://your-api-endpoint/resource/{id} \
+     -H "Authorization: Bearer ofF6zfFaFCQdYi7zdwCball4w1C8hvoQk_6ERbq-NwYycc6qBvixriOoSc5VhZB4KwFsQfdqJkP1xGZk78ULsQ==" \
+     -H "Content-Type: application/json" \
+     -d '{"key1":"new_value1", "key2":"new_value2"}'
+```
+
+#### 4. Delete (Silme)
+
+Mevcut bir kaynağı silmek için:
+
+```bash
+curl -X DELETE https://your-api-endpoint/resource/{id} \
+     -H "Authorization: Bearer ofF6zfFaFCQdYi7zdwCball4w1C8hvoQk_6ERbq-NwYycc6qBvixriOoSc5VhZB4KwFsQfdqJkP1xGZk78ULsQ=="
+```
+
+### Python Kullanarak CRUD İşlemleri
+
+#### Gerekli Kütüphaneyi Yükleyin
+
+Eğer `requests` kütüphanesi yüklü değilse, aşağıdaki komutla yükleyin:
+
+```bash
+pip install requests
+```
+
+#### CRUD İşlemleri İçin Python Kodu
+
+Aşağıda, Python'da `requests` kütüphanesini kullanarak CRUD işlemlerini gerçekleştiren bir betik örneği bulunmaktadır:
+
+```python
+import requests
+
+token = "ofF6zfFaFCQdYi7zdwCball4w1C8hvoQk_6ERbq-NwYycc6qBvixriOoSc5VhZB4KwFsQfdqJkP1xGZk78ULsQ=="
+headers = {
+    "Authorization": f"Bearer {token}",
+    "Content-Type": "application/json"
+}
+
+# Create
+create_response = requests.post(
+    "https://your-api-endpoint/resource",
+    headers=headers,
+    json={"key1": "value1", "key2": "value2"}
+)
+print("Create response:", create_response.json())
+
+# Read
+resource_id = "your_resource_id"
+read_response = requests.get(
+    f"https://your-api-endpoint/resource/{resource_id}",
+    headers=headers
+)
+print("Read response:", read_response.json())
+
+# Update
+update_response = requests.put(
+    f"https://your-api-endpoint/resource/{resource_id}",
+    headers=headers,
+    json={"key1": "new_value1", "key2": "new_value2"}
+)
+print("Update response:", update_response.json())
+
+# Delete
+delete_response = requests.delete(
+    f"https://your-api-endpoint/resource/{resource_id}",
+    headers=headers
+)
+print("Delete response:", delete_response.status_code)
+```
+
+### Test Edilecek URL'yi Değiştirme
+
+Yukarıdaki örneklerde `"https://your-api-endpoint/resource"` kısmını kendi API'nizin URL'si ile değiştirmelisiniz. Ayrıca, `resource_id` değişkenini mevcut bir kaynağın kimliği ile güncellemelisiniz.
+
+### Özet
+
+- `curl` veya Python'da `requests` kullanarak CRUD işlemlerini gerçekleştirebilirsiniz.
+- API uç noktalarını ve gerekli kimlik doğrulama başlıklarını uygun şekilde ayarlayın.
+- Her bir CRUD işlemi için doğru HTTP yöntemlerini ve URL'leri kullanın.
+
+Başka sorularınız olursa, her zaman buradayım Baboli!

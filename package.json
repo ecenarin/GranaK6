@@ -4,7 +4,9 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "test": "k6 run --config config.json /Users/skup/Downloads/GrafanaK6/src/grafanaTestTypes/reallifeTest/test-script.js"
+    "test1": "k6 run --out 'influxdb=http://localhost:8086?org=EceX&bucket=Ece%20Narin' /Users/skup/Downloads/GrafanaK6/src/grafanaTestTypes/reallifeTest/run-all-tests.js",
+    "test2": "k6 run --out 'influxdb=http://localhost:8086?org=EceX&bucket=Ece%20Narin' /Users/skup/Downloads/GrafanaK6/src/grafanaTestTypes/reallifeTest/load-testWithToken.js",
+    "test": "npm run test1 && npm run test2"
   },
   "keywords": [],
   "author": "",
